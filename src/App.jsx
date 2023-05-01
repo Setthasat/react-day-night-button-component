@@ -8,6 +8,8 @@ import LiveTime from './components/LiveTime';
 
 function App() {
 
+  document.title = "Day / Night"
+
   const [open, setOpen] = useState(false);
 
   const handleOpen = (event) => {
@@ -26,7 +28,7 @@ function App() {
       ) : (
         <motion.img src='../public/night.webp' className='absolute h-screen w-screen  bg-black/40' />
       )}
-      <div className='relative text-white font-sans flex justify-end items-center mx-[2rem] pt-[2rem]'>
+      <div className='relative text-white font-sans flex justify-end items-center mx-[4rem] pt-[2rem]'>
       <LiveTime />
       </div>
       <div className='flex justify-center items-center h-[90%]'>
