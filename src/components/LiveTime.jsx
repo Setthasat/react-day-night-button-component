@@ -4,11 +4,11 @@ function LiveTime() {
   const [time, setTime] = useState(new Date());
 
   useEffect(() => {
-    const intervalId = setInterval(() => {
+    const delay = setInterval(() => {
       setTime(new Date());
-    }, );
+    },0);
 
-    return () => clearInterval(intervalId);
+    return () => clearInterval(delay);
   }, []);
 
   return (

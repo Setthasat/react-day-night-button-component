@@ -17,9 +17,6 @@ function App() {
     setOpen((prev) => prev = !prev);
   };
 
-  useEffect(() => {
-    console.log(open);
-  }, [open]);
 
   return (
     <div className='w-full h-screen '>
