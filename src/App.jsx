@@ -21,11 +21,11 @@ function App() {
   return (
     <div className='w-full h-screen '>
       {open === false ? (
-        <motion.img src='../public/day.jpeg' className='absolute h-screen w-screen bg-black/40' />
+        <motion.img src='../public/day.jpeg' className='absolute h-screen w-auto object-cover sm:w-screen bg-black/40' />
       ) : (
-        <motion.img src='../public/night.webp' className='absolute h-screen w-screen  bg-black/40' />
+        <motion.img src='../public/night.webp' className='absolute h-screen object-cover w-auto sm:w-screen  bg-black/40' />
       )}
-      <div className='relative text-white font-sans flex justify-end items-center mx-[4rem] pt-[2rem]'>
+      <div className='relative text-white font-sans flex justify-center sm:justify-end items-center pt-[2rem] sm:mx-[4rem] sm:pt-[2rem]'>
       <LiveTime />
       </div>
       <div className='flex justify-center items-center h-[90%]'>
