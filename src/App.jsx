@@ -17,6 +17,8 @@ function App() {
     setOpen((prev) => prev = !prev);
   };
 
+  console.log(open);
+
 
   return (
     <div className='w-full h-screen '>
